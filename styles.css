@@ -11,7 +11,7 @@ body {
 
 h1 {
     color: #333;
-    font-size: 24px; /* 调整标题字体大小，适应移动端 */
+    font-size: 24px; /* 可根据需要调整字体大小 */
 }
 
 .input-group {
@@ -21,6 +21,12 @@ h1 {
     .input-group label {
         margin-right: 10px;
     }
+
+/* 增大选择框的大小 */
+select {
+    padding: 10px;
+    font-size: 16px;
+}
 
 #roll-dice {
     background-color: #007BFF;
@@ -106,7 +112,7 @@ h1 {
     color: #333;
 }
 
-/* 媒体查询，适配手机浏览器 */
+/* 媒体查询，适配手机屏幕 */
 @media (max-width: 480px) {
     h1 {
         font-size: 20px;
@@ -116,5 +122,10 @@ h1 {
         width: 40px;
         height: 40px;
         font-size: 18px;
+    }
+
+    select {
+        padding: 8px;
+        font-size: 14px;
     }
 }
