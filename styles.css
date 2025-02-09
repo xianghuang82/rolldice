@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+    .input-group label {
+        margin-right: 10px;
+    }
+
+#roll-dice {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+    #roll-dice:hover {
+        background-color: #0056b3;
+    }
+
+#dice-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.dice {
+    margin: 5px;
+    position: relative;
+    animation: roll 1s ease-out;
+}
+
+    .dice text {
+        dominant-baseline: middle;
+        text-anchor: middle;
+        font-size: 24px;
+        font-weight: bold;
+        fill: #000;
+    }
+
+@keyframes roll {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+
+    50% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
+
+#result {
+    font-size: 20px;
+    color: #333;
+}
+
+/* √ΩÃÂ≤È—Ø£¨  ≈‰ ÷ª˙‰Ø¿¿∆˜ */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .dice text {
+        font-size: 18px;
+    }
+}
